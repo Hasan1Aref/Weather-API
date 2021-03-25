@@ -1,3 +1,116 @@
-h1{
-  color:brown
+*{
+  background-color: #9ccef4;
+  font-family: Raleway;
+
+}
+.SearchContainer{
+  height: 4em;
+  background-color: #759EDA;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.pic1>p{
+  margin-left: auto;
+  margin-right: auto;
+}
+.SearchContainer > input{
+  font-size:15px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 5px;
+  color:white;
+  border: none;
+  background-color: transparent;
+
+}
+button:active,button:focus{
+    outline: none;
+    box-shadow: none;
+ 
+}
+input:active,input:focus
+{
+ box-shadow: none !important;
+ -moz-box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+ outline: none !important;
+ border-bottom: solid #050404 1px;
+ padding-bottom: 5px;
+ margin-left: 5px;}
+::placeholder {
+    color: white;
+    opacity: 0.7; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+    opacity: 0.7;  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+    opacity: 0.7;  }
+
+.SearchContainer >button{
+  margin-top: 15px;
+  margin-bottom: 1%;
+  margin-left: 5px;
+  padding: 7px;
+  background-color: #5879c7;
+  color:rgb(0, 0, 0);
+  border-radius:0%;
+  padding-left: 10px;
+  border: none;
+
+}
+#below-pic{
+    display: block;
+    padding-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.temp24{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center ;
+  justify-content: center;
+}
+.temp24>div{
+  padding-left: 2em;
+  padding-right: 2em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-top: 6em;
+}
+
+.temp24>div>#Time{
+margin-bottom: 2em;
+padding-left: 1em;
+}
+.temp24>div>#Deg{
+  margin-top: 2em;
+  padding-left: 1em;
+  }
+  
+
+.pic1>img{
+  display: block;
+  padding-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  width: 25%;
+}
+@media all and(max-width:600px){
+  .SearchContainer{
+    flex-wrap: wrap;
+  }
+  .temp24{
+    flex-wrap:wrap;
+  }
+  .temp24>div{
+    flex:1 1 50%;
+  }
+ 
+
 }
